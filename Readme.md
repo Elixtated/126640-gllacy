@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Артём Костера](https://up.htmlacademy.ru/htmlcss/22/user/126640).
-* Наставник: [Руслан Турсунов] (https://htmlacademy.ru/profile/justerror).
+* Наставник: [Руслан Турсунов](https://htmlacademy.ru/profile/justerror).
 
 ---
 
