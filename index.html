@@ -6,7 +6,120 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <a class="main-logo" href="#">
+        <img src="http://via.placeholder.com/185x75" alt="Логотип Глейси" width="185" height="75">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="#">Каталог</a></li><!--Тут будет всплывающая форма каталога-->
+          <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a href="#">О Компании</a></li>
+        </ul>
+
+        <span class="search">Поиск</span><!--Тут будет всплывающая форма поиска-->
+        <span class="search">Вход</span>
+        <span class="search">Корзина</span>
+        <p class="schedule">С 10 до 20, ежедневно</p>
+        <p class="phone">8 812 450-25-25</p>
+      </nav>
+      <h1>Магазин мороженного</h1>
+    </header>
+
+    <main class="main-content">
+      <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+      <a class="button" href="#">Давайте оба</a>
+      <section class="main-content-bonus">
+        <h3>Малинка даром!</h3>
+        <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a class="button" href="#">Хочу варенье!</a>
+      </section>
+      <section class="main-content-bonus">
+        <h3>Шоколадки даром!</h3>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a class="button" href="#">Хочу варенье!</a>
+      </section>
+
+      <section class="main-content-items">
+        <ul class="main-content-item">
+          <li><a href="#">
+            <img src="http://via.placeholder.com/250x250" alt="Сливночное мороженное с апельсиновым джемом и цитрусовой стружкой" width="250" height="250"></a>
+            <span>310 р / кг</span>
+            <p>Сливночное с апельсиновым джемом и цитрусовой стружкой</p>
+          </li>
+
+          <li><a href="#">
+            <img src="http://via.placeholder.com/250x250" alt="Сливночно-кофейное мороженное с кусочками шоколада" width="250" height="250"></a>
+            <span>380 р / кг</span>
+            <p>Сливночно-кофейное с кусочками шоколада</p>
+          </li>
+
+          <li><a href="#">
+            <img src="http://via.placeholder.com/250x250" alt="Сливночное-клубничное мороженное с присыпкой из белого шоколада" width="250" height="250"></a>
+            <span>355 р / кг</span>
+            <p>Сливночное-клубничное с присыпкой из белого шоколада</p>
+          </li>
+
+          <li><a href="#">
+            <img src="http://via.placeholder.com/250x250" alt="Сливночное мороженное крем-брюле с карамелной подливкой" width="250" height="250"></a>
+            <span>415 р / кг</span>
+            <p>Сливночное крем-брюле с карамелной подливкой</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about-us">
+        <h2>Магазин Глейси — это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h2>
+        <ul class="about-us-items">
+          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+          <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+        </ul>
+      </section>
+      <article class="news">
+        <p>Новое в нашем блоге</p>
+        <h3>10 способов сервировки фруктовых щербетов к столу</h3>
+      </article>
+
+      <section class="subscription">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+        <span>Электронная почта</span>
+        <button type="button" name="send">Отправить</button>
+      </section>
+      <section class="map">
+        <p>Адрес главного офиса<br>
+и офлайн-магазина:<br>
+
+ ул. Большая Конюшенная 19/8, Санкт-Петербург<br>
+
+  Для заказов по телефону:<br>
+8 812 450-25-25<br>
+(с 10 до 20 ежедневно)
+</p>
+<button type="button" name="feedback">Форма обратной связи</button>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <ul class="main-footer-items">
+        <li><a class="social-button" href="#"><!--Твитер--></a></li>
+        <li><a class="social-button" href="#"><!--Инстаграм--></a></li>
+        <li><a class="social-button" href="#"><!--Фейсбук--></a></li>
+        <li><a class="social-button" href="#"><!--Вконтакте--></a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#">О производстве</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+      <img src="http://via.placeholder.com/50x50" alt="Логотип HTML Academy" width="50" height="50">
+      <p class="footer-copyright">Сделано в HTML Academy © 2017</p>
+      </footer>
+    </footer>
 
   </body>
 </html>
