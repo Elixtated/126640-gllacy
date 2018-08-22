@@ -17,47 +17,64 @@
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="/catalog.html">Каталог</a>
-        <ul class="site-navigation-catalog">
-          <li><a href="/new.html">Новинки</a></li>
-          <li><a href="/creamy.html">Сливочное</a></li>
-          <li><a href="/sherbet.html">Щербеты</a></li>
-          <li><a href="/fruit-ice.html">Фруктовый лед</a></li>
-          <li><a href="/melorin.html">Мелорин</a></li>
-        </ul>
+              <ul class="site-navigation-catalog">
+                <li><a href="/new.html">Новинки</a></li>
+                <li><a href="/creamy.html">Сливочное</a></li>
+                <li><a href="/sherbet.html">Щербеты</a></li>
+                <li><a href="/fruit-ice.html">Фруктовый лед</a></li>
+                <li><a href="/melorin.html">Мелорин</a></li>
+              </ul>
           </li>
           <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
           <li class="site-navigation-item"><a href="#">О Компании</a></li> 
         </ul>
 
-        <form class="nav-form" action="https://echo.htmlacademy.ru" method="post">
-		<input type="text" placeholder="Что ищем?" name="nav-form-search">
-		<button type="button" aria-label="Поиск">
-      <!--Тут будет всплывающая форма поиска loupe.svg-->
-    </button>
-
-        <button type="button" aria-label="Вход">
-          Вход <!--Тут будет всплывающая форма входа entrance.svg-->
-        </button>
+        <div class="nav-search">
+          <a href="#">Поиск</a>
           
-	
-  	<input type="text" placeholder="Электронная почта" name="email">
-		<input type="password" placeholder="Пароль" name="email">
-		<button class="enter" type="submit">Войти</button>
-		<ul class="enter-characters">
-		<li><a href="#">Забыли пароль</a></li>
-		<li><a href="#">Новая регистарция</a></li>
-		</ul>
-		</form>
-
+          <form class="nav-form-search" action="https://echo.htmlacademy.ru" method="post">
+        
+            <input type="text" placeholder="Что ищем?" name="nav-form-search">
+            <button type="submit" aria-label="Поиск"><!--Кнокпа будет скрытая-->
+              <!--Тут будет всплывающая форма поиска loupe.svg-->
+            </button>
+          </form>
+        </div>
+  
+      
+      <ul>
+        
+      
+        
+  <li><a href="/login.html">Вход</a> <!--Тут будет всплывающая форма входа entrance.svg-->
+        
+          <form class="nav-form-enter" action="https://echo.htmlacademy.ru" method="post">
+        	
+          	<input type="text" placeholder="Электронная почта" name="email">
+        		<input type="password" placeholder="Пароль" name="email">
+        		<button class="enter" type="submit">Войти</button>
+        		<ul class="enter-characters">
+            		<li><a href="#">Забыли пароль</a></li>
+            		<li><a href="#">Новая регистарция</a></li>
+        		</ul>
+            </form>
+  </li>
+		        
+    <li>
 		<div class="basket">
-        <button class="empty-basket" type="button">
+        <a href="/basket.html">
         Пусто<!--Тут будет пустая корзина basket.svg-->
-      </button>
+      </a>
 		</div>
+  </li>
+  </ul>
+    
 
         <p class="schedule">С 10 до 20, ежедневно</p>
         <p class="phone">8 812 450-25-25</p>
       </nav>
+      
+      
       <h1 class="visually-hidden">Магазин мороженого</h1> 
       <ul class="background-slide">
       <li class="slide-radio"><button class="slide-btn"></button></li>
@@ -66,6 +83,7 @@
     
       <li class="slide-radio"><button class="slide-btn"></button></li>
       </ul>
+    
     </header>
 
     <main class="main-content">
