@@ -16,24 +16,32 @@
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="/catalog.html">Каталог</a>
-        <ul class="site-navigation-catalog">
-          <li><a href="/new.html">Новинки</a></li>
-          <li><a href="/creamy.html">Сливочное</a></li>
-          <li><a href="/sherbet.html">Щербеты</a></li>
-          <li><a href="/fruit-ice.html">Фруктовый лед</a></li>
-          <li><a href="/melorin.html">Мелорин</a></li>
-        </ul>
+              <ul class="site-navigation-catalog">
+                <li><a href="/new.html">Новинки</a></li>
+                <li><a href="/creamy.html">Сливочное</a></li>
+                <li><a href="/sherbet.html">Щербеты</a></li>
+                <li><a href="/fruit-ice.html">Фруктовый лед</a></li>
+                <li><a href="/melorin.html">Мелорин</a></li>
+              </ul>
           </li>
           <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
           <li class="site-navigation-item"><a href="#">О Компании</a></li> 
         </ul>
 
-        <form class="nav-form" action="https://echo.htmlacademy.ru" method="post">
-		<input type="text" placeholder="Что ищем?" name="nav-form-search">
-		<button type="button" aria-label="Поиск">
-      <!--Тут будет всплывающая форма поиска loupe.svg-->
-    </button>
-
+        <div class="nav-search">
+          <a href="#">Вход</a>
+          
+          <form class="nav-form-search" action="https://echo.htmlacademy.ru" method="post">
+        
+            <input type="text" placeholder="Что ищем?" name="nav-form-search">
+            <button type="submit" aria-label="Поиск"><!-- -->
+              <!--Тут будет всплывающая форма поиска loupe.svg-->
+            </button>
+          </form>
+        </div>
+  
+      
+      <form class="nav-form-enter" action="https://echo.htmlacademy.ru" method="post">
         <button type="button" aria-label="Вход">
           Вход <!--Тут будет всплывающая форма входа entrance.svg-->
         </button>
@@ -43,8 +51,8 @@
 		<input type="password" placeholder="Пароль" name="email">
 		<button class="enter" type="submit">Войти</button>
 		<ul class="enter-characters">
-		<li><a href="#">Забыли пароль</a></li>
-		<li><a href="#">Новая регистарция</a></li>
+    		<li><a href="#">Забыли пароль</a></li>
+    		<li><a href="#">Новая регистарция</a></li>
 		</ul>
 		</form>
 
