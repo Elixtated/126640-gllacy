@@ -29,7 +29,31 @@
 
         <span class="user-navigation-search">Поиск</span><!--Тут будет всплывающая форма поиска-->
         <span class="user-navigation-enter">Вход</span>
-        <span class="user-navigation-box">Корзина</span>
+        <div class="basket">
+    		<ul class="full basket">
+    			<li><button type="button" aria-label="Удалить из корзины"><!--Тут будет пустая корзина cross-small.svg--></button>
+            </li>
+    			<li><img src="img/ice-cream-small-1.jpg" alt="Иконка с мороженным" width="33" height="33"></li>
+    			<li>Пломбир с апельсиновым джемом</li>
+    			<li>1,5 кг х 200 руб</li>
+    			<li>300 руб.</li>
+    		</ul>
+    
+    
+    		<ul class="full basket">
+          <li><button type="button" aria-label="Удалить из корзины"><!--Тут будет пустая корзина cross-small.svg--></button>
+            </li>
+    			<li>
+            <img src="img/ice-cream-small-2.jpg" alt="Иконка с мороженным" width="33" height="33">
+          </li>
+    			<li>Клубничный пломбир с присыпкой
+    	из белого шоколада</li>
+    			<li>1,5 кг х 300 руб</li>
+    			<li>400 руб.</li>
+    		</ul>
+    		<p class="total">Итого: 750 руб.</p>
+    		<a href="/order.html">Оформить заказ</a>
+    		</div>
 
         <p class="schedule">С 10 до 20, ежедневно</p>
         <p class="phone">8 812 450-25-25</p>
@@ -44,15 +68,15 @@
     </header>
 
     <main class="catalog">
-      <form class="catalog-filter" action="index.html" method="post">
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
       <div class="catalog-sort">
         <p>Сортировка:</p>
         
         <select name="catalog-sort-items">
-          <option value="по популярности">по популярности</option>
-          <option value="сначала недорогие">сначала недорогие</option>
-          <option value="сначала дорогие">сначала дорогие</option>
-          <option value="по жирности">по жирности</option>
+          <option value="popularity">по популярности</option>
+          <option value="cheap">сначала недорогие</option>
+          <option value="expensive">сначала дорогие</option>
+          <option value="fat">по жирности</option>
         </select>
       </div>
       <div class="catalog-price">
@@ -71,22 +95,22 @@
           
           <li>
             <input type="radio" name="fat-choice" value="0%" id="fat-choice-zero">
-            <label for="fat-choice-zero"><img src="img/radio-off.svg" alt="0% жирности" width="22" height="22">0%</label>
+            <label for="fat-choice-zero"><!--radio-off.svg-->0%</label>
           </li>
           
           <li>
             <input type="radio" name="fat-choice" value="to-10" id="fat-choice-to-10">
-            <label for="fat-choice-to-10"><img src="img/radio-on.svg" alt="до 10% жирности" width="22" height="22">до 10%</label>
+            <label for="fat-choice-to-10"><!--radio-on.svg-->до 10%</label>
           </li>
           
           <li>
             <input type="radio" name="fat-choice" value="to-30%" id="fat-choice-to-30">
-            <label for="fat-choice-to-30"><img src="img/radio-off.svg" alt="до 30% жирности" width="22" height="22">до 30%</label>
+            <label for="fat-choice-to-30"><!--radio-off.svg-->до 30%</label>
           </li>
           
           <li>
             <input type="radio" name="fat-choice" value="above-30" id="fat-choice-above-30">
-            <label for="fat-choice-above-30"><img src="img/radio-off.svg" alt="до 30% жирности" width="22" height="22">выше 30%</label>
+            <label for="fat-choice-above-30"><!--radio-off.svg-->выше 30%</label>
           </li>
           
           
@@ -213,27 +237,27 @@
 
       <div class="pagination">
         <ul class="pagination-items">
-          <li><a href=""><img src="img/icon-right-small.svg" alt="Стрелка влево"></a></li>
+          <li><a href=""><!--icon-right-small--></a></li>
           <li><a href="">1</a></li>
           <li><a href="/page2.html">2</a></li>
           <li><a href="/page3.html">3</a></li>
           <li><a href="/page4.html">4</a></li>
           <li><a href="/page5.html">5</a></li>
-          <li><a href=""><img src="img/icon-right-small.svg" alt="Стрелка вправо"></a></li>
+          <li><a href=""><!--icon-right-small--></a></li>
         </ul>
       </div>
     </main>
 
     <footer class="main-footer">
       <ul class="main-footer-items">
-          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a></li>
-          <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a></li>
-          <li><a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a></li>
-      </ul>
+           <li><a class="social-button" href="#"><span class="visually-hidden">Твитер</span></a></li>
+           <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+           <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+           <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+       </ul>
       <ul class="main-footer-informations">
         
-        <li><a href="#"><img src="img/heart.svg" width="15" height="13" alt="Иконка сердце">Для поставщиков</a></li>
+        <li><!--heart.svg--><a href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
@@ -242,7 +266,6 @@
       <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип htmlacademy">
       <p class="copyright">Сделано в HTML Academy © 2017</p>
     </div>
-
     </footer>
 
   </body>

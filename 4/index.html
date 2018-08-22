@@ -31,10 +31,16 @@
 
         <form class="nav-form" action="https://echo.htmlacademy.ru" method="post">
 		<input type="text" placeholder="Что ищем?" name="nav-form-search">
-		<button type="submit"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></button><!--Тут будет всплывающая форма поиска-->
+		<button type="button" aria-label="Поиск">
+      <!--Тут будет всплывающая форма поиска loupe.svg-->
+    </button>
 
-        <button type="submit"><img src="img/entrance.svg" width="21" height="17" alt="Вход">Вход</button><!--Тут будет всплывающая форма входа-->
-		<input type="text" placeholder="Электронная почта" name="email">
+        <button type="button" aria-label="Вход">
+          Вход <!--Тут будет всплывающая форма входа entrance.svg-->
+        </button>
+          
+	
+  	<input type="text" placeholder="Электронная почта" name="email">
 		<input type="password" placeholder="Пароль" name="email">
 		<button class="enter" type="submit">Войти</button>
 		<ul class="enter-characters">
@@ -44,27 +50,9 @@
 		</form>
 
 		<div class="basket">
-        <button class="empty-basket" type="button"><img src="img/basket.svg" width="21" height="20" alt="Корзина">Пусто</button><!--Тут будет пустая корзина-->
-
-		<ul class="full basket">
-			<li><img src="img/cross-small" width="11" height="11" alt="Закрыть"></li>
-			<li><!--Наверное лучше через css мини картинку товара сделать--></li>
-			<li>Пломбир с апельсиновым джемом</li>
-			<li>1,5 кг х 200 руб</li>
-			<li>300 руб.</li>
-		</ul>
-
-
-		<ul class="full basket">
-			<li><img src="img/cross-small" width="11" height="11" alt="Закрыть"></li>
-			<li><!--Наверное лучше через css мини картинку товара сделать--></li>
-			<li>Клубничный пломбир с присыпкой
-	из белого шоколада</li>
-			<li>1,5 кг х 300 руб</li>
-			<li>400 руб.</li>
-		</ul>
-		<p class="total">Итого: 750 руб.</p>
-		<button type="submit" class="order" name="order">Оформить заказ</button>
+        <button class="empty-basket" type="button">
+        Пусто<!--Тут будет пустая корзина basket.svg-->
+      </button>
 		</div>
 
         <p class="schedule">С 10 до 20, ежедневно</p>
@@ -72,11 +60,11 @@
       </nav>
       <h1 class="visually-hidden">Магазин мороженого</h1> 
       <ul class="background-slide">
-      <li><input type="radio" name="main-content-slide" value="first-slide" checked></li>
+      <li class="slide-radio"><button class="slide-btn"></button></li>
     
-      <li><input type="radio" name="main-content-slide" value="second-slide"></li>
+      <li class="slide-radio"><button class="slide-btn"></button></li>
     
-      <li><input type="radio" name="main-content-slide" value="second-slide"></li>
+      <li class="slide-radio"><button class="slide-btn"></button></li>
       </ul>
     </header>
 
@@ -98,7 +86,7 @@
 
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="button" href="#">Хочу варенье!</a>
+          <a class="button" href="#">Хочу шоколадки!</a>
         </li>
         </ul>
 
@@ -107,28 +95,28 @@
       <section class="main-content-items">
         <ul class="main-content-item">
           <li><a href="#">
-            <img src="img/hit.svg" width="61" height="61" alt="Хит">
+            <!--тут добавим hit.svg -->
             <img src="img/product-1.jpg" alt="Сливночное мороженное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
             <span>310 <img src="img/ruble.svg" width="30" height="35" alt="Рубль"> / кг</span>
             <p>Сливночное с апельсиновым джемом и цитрусовой стружкой</p></a>
           </li>
 
           <li><a href="#">
-            <img src="img/hit.svg" width="61" height="61" alt="Хит">
+            <!--тут добавим hit.svg -->
             <img src="img/product-2.jpg" alt="Сливночно-кофейное мороженное с кусочками шоколада" width="267" height="267">
             <span>380 <img src="img/ruble.svg" width="30" height="35" alt="Рубль"> / кг</span>
             <p>Сливночно-кофейное с кусочками шоколада</p></a>
           </li>
 
           <li><a href="#">
-            <img src="img/hit.svg" width="61" height="61" alt="Хит">
+            <!--тут добавим hit.svg -->
             <img src="img/product-3.jpg" alt="Сливночное-клубничное мороженное с присыпкой из белого шоколада" width="267" height="267">
             <span>355 <img src="img/ruble.svg" width="30" height="35" alt="Рубль"> / кг</span>
             <p>Сливночное-клубничное с присыпкой из белого шоколада</p></a>
           </li>
 
           <li><a href="#">
-            <img src="img/hit.svg" width="61" height="61" alt="Хит">
+            <!--тут добавим hit.svg -->
             <img src="img/product-4.jpg" alt="Сливночное мороженное крем-брюле с карамелной подливкой" width="267" height="267">
             <span>415 <img src="img/ruble.svg" width="30" height="35" alt="Рубль"> / кг</span>
             <p>Сливночное крем-брюле с карамелной подливкой</p></a>
@@ -139,10 +127,10 @@
       <section class="about-us">
         <h2>Магазин Глейси — это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h2>
         <ul class="about-us-items">
-          <li><img src="img/ice-cream.svg" width="49" height="49" alt="Иконка с мороженым">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li><img src="img/eco.svg" width="49" height="49" alt="Иконка с листиком">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
-          <li><img src="img/cow.svg" width="49" height="49" alt="Иконка с коровой">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li><img src="img/thermometer.svg" width="49" height="49" alt="Иконка с термометром">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+          <li><!-- ice-cream.svg-->Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li><!-- eco.svg-->Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+          <li><!-- cow.svg-->Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li><!-- thermometer.svg-->Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
 
@@ -155,8 +143,14 @@
 
       <section class="content-subscription">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <span>Электронная почта</span>
-        <button type="button" name="send">Отправить</button>
+        <form class="submit" action="https://echo.htmlacademy.ru" method="post">
+      
+          <input type="email" id="send-email" placeholder="Электронная почта">
+          <input type="submit" value="Отправить">
+        
+        </form>
+        
+        
       </section>
       </div>
 
@@ -174,29 +168,29 @@
 </p>
 </div>
 <button type="button" name="feedback">Форма обратной связи</button>
-<div class="visually-hidden">
+
 <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
   <h2>Мы обязательно вам ответим!</h2>
-  <img src="img/cross-big.svg" alt="Закрыть форму обратной связи" width="17" height="17">
+  <button type="button" aria-label="Закрыть"><!--cross-big.svg --></button>
   <input type="text" name="name" placeholder="Как вас зовут?">
   <input type="text" name="email" placeholder="Ваша почта для ответа?">
   <textarea name="comment" id="comment-field" rows="5">Напишите что-нибудь...</textarea>
   <button type="submit" name="button">Отправить</button>
 </form>
-</div>
+
         </section>
     </main>
 
     <footer class="main-footer">
       <ul class="main-footer-items">
-          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a></li>
-          <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a></li>
-          <li><a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a></li>
-      </ul>
+           <li><a class="social-button" href="#"><span class="visually-hidden">Твитер</span></a></li>
+           <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+           <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+           <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+       </ul>
       <ul class="main-footer-informations">
         
-        <li><a href="#"><img src="img/heart.svg" width="15" height="13" alt="Иконка сердце">Для поставщиков</a></li>
+        <li><!--heart.svg--><a href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
