@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -14,11 +17,11 @@
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="/catalog.html">Каталог</a>
               <ul class="site-navigation-catalog">
-                <li><a href="/new.html">Новинки</a></li>
-                <li><a href="/creamy.html">Сливочное</a></li>
-                <li><a href="/sherbet.html">Щербеты</a></li>
-                <li><a href="/fruit-ice.html">Фруктовый лед</a></li>
-                <li><a href="/melorin.html">Мелорин</a></li>
+                <li class="active"><a href="/new.html">Новинки</a></li>
+                <li class="active"><a href="/creamy.html">Сливочное</a></li>
+                <li class="active"><a href="/sherbet.html">Щербеты</a></li>
+                <li class="active"><a href="/fruit-ice.html">Фруктовый лед</a></li>
+                <li class="active"><a href="/melorin.html">Мелорин</a></li>
               </ul>
           </li>
           <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
@@ -26,43 +29,36 @@
         </ul>
 
         <div class="nav-search">
-          <a href="#">Поиск</a>
+          <a href="#"><span class="visually-hidden">Поиск</span></a>
           
           <form class="nav-form-search" action="https://echo.htmlacademy.ru" method="post">
           <label>
             <input type="text" placeholder="Что ищем?" name="nav-form-search">
           </label>
-            <button type="submit" aria-label="Поиск"><!--Кнокпа будет скрытая-->
+            <button class="visually-hidden" type="submit" aria-label="Поиск"><!--Кнокпа будет скрытая-->
               <!--Тут будет всплывающая форма поиска loupe.svg-->
             </button>
           </form>
         </div>
   
       
-      <ul>
-        
-      
-        
-  <li><a href="/login.html">Вход</a> <!--Тут будет всплывающая форма входа entrance.svg-->
-        
-          <form class="nav-form-enter" action="https://echo.htmlacademy.ru" method="post">
-        	
-          
-          	<label><input type="text" placeholder="Электронная почта" name="email"></label>
+<ul class="nav-enter">      
+  <li class="nav-enter-item">
+    <a class="nav-enter-item-img" href="/login.html">Вход</a> <!--Тут будет всплывающая форма входа entrance.svg-->    
+    <form class="nav-form-enter" action="https://echo.htmlacademy.ru" method="post">
+            <label><input type="text" placeholder="Электронная почта" name="email"></label>
         		<label><input type="password" placeholder="Пароль" name="email"></label>
-            
         		<button class="enter" type="submit">Войти</button>
-            
         		<ul class="enter-characters">
-            		<li><a href="#">Забыли пароль</a></li>
+            		<li><a href="#">Забыли пароль?</a></li>
             		<li><a href="#">Новая регистарция</a></li>
         		</ul>
             </form>
-  </li>
-		        
-    <li>
+  </li>  
+       
+  <li class="nav-enter-item">
 		<div class="basket">
-        <a href="/basket.html">
+        <a class="basket-img" href="/basket.html">
         Пусто<!--Тут будет пустая корзина basket.svg-->
       </a>
 		</div>
@@ -88,9 +84,10 @@
 
     <main class="main-content">
     
+    <div class="main-content-info">
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
       <a class="button" href="#">Давайте оба</a>
-
+    </div>
       <section class="main-content-bonus">
 
         <ul class="main-content-bonus-items">
