@@ -1,3 +1,237 @@
+<<<<<<< HEAD
+body {
+  margin: 9;
+  padding: 0;
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  
+  background-color: #849d8f;
+  background-image: url("../img/icecream-bg-green.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+
+.site-navigation, .site-navigation-catalog, .nav-enter {
+  list-style: none;
+}
+
+.site-navigation-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.site-navigation-catalog a {
+  text-decoration: none;
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  
+  background-color: #f8f7f4;
+}
+
+.site-navigation-catalog a:hover {
+  background-color: #fbded7;
+}
+
+.site-navigation-catalog a:active {
+  background-color: #f6b5a5;
+}
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.nav-search a {
+  background-image: url("../img/loupe.svg");
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: block;
+}
+
+
+
+.nav-search a:hover {
+  background-color: rgba(255, 255, 255);
+  background-image: url("../img/loupe-hover.svg");
+  
+}
+
+.nav-form-enter {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.nav-enter-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-enter .nav-enter-item-img {
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-enter-item .nav-enter-item-img::before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../img/entrance.svg");
+  width: 21px;
+  height: 19px;
+  
+}
+.nav-enter-item a:hover {
+  color: #000000;
+}
+
+.nav-enter-item-img:hover::before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../img/entrance-hover.svg");
+  width: 21px;
+  height: 19px;
+  color: #000000;
+  
+}
+
+
+
+
+.enter {
+  font-size: 18px;
+  line-height: 24px;
+  
+  color: #fefefe;
+  background-color: #e95038;
+  border: none;
+}
+
+.enter-characters a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+  list-style: none;
+}
+
+.enter-characters a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+  list-style: none;
+  
+}
+
+
+.nav-basket-item .basket-img::before {
+  content: url("../img/basket.svg");
+}
+
+
+.nav-enter .nav-basket-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.nav-enter .basket-img {
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.schedule {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.background-slide {
+  list-style: none;
+}
+
+
+
+.slide-radio .slide-btn {
+  background-color: rgba(255,255,255,0);
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255);
+  
+}
+
+.slide-radio .slide-btn:hover {
+  background-color: rgba(255,255,255, 0.4);
+}
+
+.slide-radio .slide-btn:active {
+  background-color: rgba(255,255,255);
+}
+
+.main-content-info h2 {
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
+.button {
+  background-color: #ed5a3d;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+.main-content-info .button {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.main-content-bonus-items {
+  list-style: none;
+}
+
+.main-content-bonus-items h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.main-content-item a { /* Ссылки в основном меню с товарами */
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-content-item a:hover, .main-content-item a:active {
+  color: #ffbc9e;  
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+
+=======
 body {
   margin: 9;
   padding: 0;
@@ -189,3 +423,4 @@ h2 {
   font-size: 32px;
   line-height: 44px;
 }
+>>>>>>> 416dde24299e277ed3a8b5e061b9249dc1c16c5a
