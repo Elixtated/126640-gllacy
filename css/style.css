@@ -93,6 +93,7 @@ body {
   background-image: url("../img/entrance.svg");
   width: 21px;
   height: 19px;
+  vertical-align: middle;
   
 }
 .nav-enter-item a:hover {
@@ -106,7 +107,7 @@ body {
   width: 21px;
   height: 19px;
   color: #000000;
-  
+  vertical-align: middle;
 }
 
 
@@ -257,7 +258,7 @@ body {
   background-repeat: no-repeat;
   width: 61px;
   height: 61px;
-  
+  vertical-align: middle;
 }
 
 
