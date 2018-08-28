@@ -12,6 +12,42 @@ body {
 
 }
 
+.site-navigation {
+  display: flex;
+  justify-content: flex-start;
+  
+  
+}
+
+.main-header {
+  display: flex;
+}
+
+.main-content-bonus-items {
+  display: flex;    
+  
+}
+
+.main-content-item {
+  display: flex; 
+
+}
+
+.about-us-items {
+  display: flex; 
+  
+}
+
+.content {
+  display: flex;   
+  
+}
+
+.main-footer {
+  display: flex;
+  
+}
+
 .main-header-bg {
   background-image: url("../img/icecream-bg-green.png");
   background-repeat: no-repeat;
