@@ -732,6 +732,11 @@ li .full-basket-price {
 */
 
 
+.catalog-sort select {
+  border: none;
+  background-color: transparent;
+}
+
 .catalog-sort, .catalog-price, .catalog-fat-choice-items, .catalog-taste-fillers li {
   background-color: rgba(255,255,255,0.2);
 }
