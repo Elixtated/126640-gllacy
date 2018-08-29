@@ -19,9 +19,7 @@ body {
   
 }
 
-.main-header {
-  display: flex;
-}
+
 
 .main-content-bonus-items {
   display: flex;    
@@ -329,6 +327,11 @@ body {
   text-decoration: none;
 }
 
+.main-content-item img { /* Ссылки в основном меню с товарами */
+  border-radius: 50%;
+}
+
+
 .main-content-item span { /* Ссылки в основном меню с товарами */
   color: #ffffff;
   font-size: 45px;
@@ -344,9 +347,10 @@ body {
   line-height: 18px;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  
 
 }
+
+
 
 .main-content-item p:hover, .main-content-item p:active {
   color: #ffbc9e;  
@@ -692,14 +696,20 @@ li .full-basket-price {
   text-decoration: none;
   color: #ffffff;
   display: inline-block;
+  position: relative;
+  padding-right: 22px;
 }
 
-.breadcrumbs a::after {
-  content: " >> ";
+.breadcrumbs a::after { /* Проверить точно ли */
+  content: " » ";
   display: inline-block;
   border-bottom: none;
+  position: absolute;
+  top: 0px;
+  left: 63px;
   
 }
+
 
 /*
 Хлебгые крошки - конец
@@ -720,12 +730,30 @@ li .full-basket-price {
 */
 
 
-.catalog-sort, .catalog-price, .catalog-fat-choice-items, .catalog-taste-fillers {
+.catalog-sort, .catalog-price, .catalog-fat-choice-items, .catalog-taste-fillers li {
   background-color: rgba(255,255,255,0.2);
 }
 
-.catalog-filter-button {
+.catalog-taste-fillers {
+  list-style: none;
+}
+
+.catalog-taste-choise {
+  font-size: 14px;
+  /* line-height auto ???? */
+}
+
+.catalog-sort {
+  position: relative;
   
+}
+
+
+.catalog-sort:before {
+  content: url("../img/icon-down-dir-2.svg");
+  position: absolute;
+  right: 1170px;
+  top: 0px;  
 }
 
 
