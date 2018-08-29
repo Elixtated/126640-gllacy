@@ -19,7 +19,9 @@ body {
   
 }
 
-
+.nav-enter {
+  display: flex;
+}
 
 .main-content-bonus-items {
   display: flex;    
