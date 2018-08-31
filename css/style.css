@@ -476,6 +476,10 @@ body {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
+.main-content-items {
+  margin-bottom: 20px;
+}
+
 .main-content-bonus-items {
   list-style: none;
   margin: 0;
@@ -491,8 +495,20 @@ body {
 .main-content-bonus-items h3 {
   font-size: 35px;
   line-height: 41px;
+  padding: 20px;
+  padding-bottom: 16px;
+  margin: 0;
 }
 
+.main-content-bonus-items p {
+  padding-top: 0;
+  padding-left: 21px;
+  padding-right: 20px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
 
 
 .main-content-item a { /* Ссылки в основном меню с товарами */
@@ -500,6 +516,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
+  
 }
 
 .main-content-item img { /* Ссылки в основном меню с товарами */
@@ -555,6 +572,7 @@ body {
   display: flex; 
   justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 
 .main-content-item a::before {
