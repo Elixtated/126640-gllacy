@@ -141,7 +141,7 @@ body {
 
 }
 
-.catalog:hover + .site-navigation-catalog {
+li:hover + .site-navigation-catalog {
   display: block;
   position: absolute;
   top: 50px;
@@ -623,8 +623,8 @@ body {
 }
 
 .product-price {
-  position: relative;
-  top: -58px;
+  margin-top: -58px;
+  display: block;
   
 }
 
@@ -684,7 +684,7 @@ body {
   height: 49px;
   vertical-align: middle;
   position: absolute;
-  top: 0px;
+  top: 4px;
   left: 0px;
 
 }
@@ -699,7 +699,7 @@ body {
   height: 49px;
   vertical-align: middle;
   position: absolute;
-  top: 0px;
+  top: 4px;
   left: 0px;
 }
 
