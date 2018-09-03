@@ -631,7 +631,6 @@ body {
 
 .about-us {
   background-image: url("../img/wafer-bg.png");
-  background-repeat: no-repeat;
   width: 100%;
   padding-top: 28px;
   padding-left: 21px;
@@ -655,7 +654,7 @@ body {
 
 .about-us-items {
   list-style: none;
-
+  
   display: flex;
   flex-wrap:wrap;
   padding: 0;
@@ -671,7 +670,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  
+  position: relative;
 
   
 }
@@ -685,8 +684,8 @@ body {
   height: 49px;
   vertical-align: middle;
   position: absolute;
-  top: 95px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
 
 }
 
@@ -700,8 +699,8 @@ body {
   height: 49px;
   vertical-align: middle;
   position: absolute;
-  top: 183px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
 }
 
 
@@ -714,8 +713,8 @@ body {
   height: 49px;
   vertical-align: middle;
   position: absolute;
-  top: 95px;
-  left: 587px;
+  top: 0px;
+  left: 0px;
 }
 
 .about-us-items li:last-child::before {
@@ -727,8 +726,8 @@ body {
   height: 49px;
   vertical-align: middle;
   position: absolute;
-  top: 183px;
-  left: 587px;
+  top: 0px;
+  left: 0px;
 }
 
 .content {
