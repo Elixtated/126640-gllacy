@@ -113,7 +113,7 @@ body {
 
 .main-footer {
   display: flex;
-  
+  margin-bottom: 30px;
 }
 
 .main-header-bg {
@@ -141,16 +141,13 @@ body {
 
 }
 
-li:hover + .site-navigation-catalog {
+.site-navigation-item:hover > .site-navigation-catalog {
   display: block;
   position: absolute;
   top: 50px;
   left: 150px;
 }
 
-.site-navigation > .site-navigation-item:hover > .site-navigation-catalog {
-    display: block;
-}
 
 
 .site-navigation-item a {
@@ -542,7 +539,7 @@ li:hover + .site-navigation-catalog {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
-  
+  text-align: center;
 }
 
 .main-content-item img { /* Ссылки в основном меню с товарами */
@@ -566,7 +563,8 @@ li:hover + .site-navigation-catalog {
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
-
+  display: inline-block;
+  
 }
 
 
@@ -602,6 +600,8 @@ li:hover + .site-navigation-catalog {
   margin: 0;
   position: relative;
   width: 1150px;
+  
+  
 }
 .main-content-item li {
   padding: 0;
@@ -874,15 +874,18 @@ li:hover + .site-navigation-catalog {
   vertical-align: middle;
 }
 
-
+.footer-container {
+  display: flex;
+}
 
 
 .main-footer-items {
   list-style: none;
-  width: 273px;
+  width: 267px;
   display: flex;
   justify-content: flex-start;
   margin: 0;
+  margin-right: 151px;
   padding: 0;
   padding-top: 3px;
   padding-left: 3px;
@@ -952,7 +955,28 @@ li:hover + .site-navigation-catalog {
 .main-footer-informations {
   list-style: none;
   margin-top: 0;
-  margin-left: 85px;
+  margin-right: 139px;
+  padding: 0;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-footer-informations li {
+  padding: 0;
+  margin: 0;
+  width: 165px;
+  position: relative;
+}
+
+.main-footer-informations li:nth-child(2n) {
+  margin-left: -20px;
+}
+
+.main-footer-copyright {
+  width: 267px;
+  margin-left: auto;
+  margin-top: -19px;
 }
 
 .main-footer a {
@@ -981,11 +1005,14 @@ li:hover + .site-navigation-catalog {
   background-repeat: no-repeat;
   width: 15px;
   height: 13px;
+  position: absolute;
+  left: -25px;
 }
 
 .copyright {
   font-size: 12px;
   line-height: 18px;
+  margin: 0;
 }
 
 /* Ссылки для формы */
