@@ -573,7 +573,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
   display: inline-block;
-  
+
 }
 
 
@@ -605,6 +605,7 @@ body {
   line-height: 22px;
   display: flex; 
   justify-content: space-between;
+  
   padding: 0;
   margin: 0;
   position: relative;
@@ -1138,6 +1139,7 @@ li .full-basket-price {
 .selection-options {
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
 }
 
 /*
@@ -1147,28 +1149,44 @@ li .full-basket-price {
 
 .catalog-sort select {
   border: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: transparent
   
   
 }
 
-.catalog-sort, .catalog-price, .catalog-fat-choice-items, .catalog-taste-fillers li {
+.catalog-price {
   background-color: rgba(255,255,255,0.2);
 }
+
+.catalog-taste {
+  width: 704px;
+}
+
 
 .catalog-taste-fillers {
   list-style: none;
   display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 15px;
+  width: 692px;
+  margin: 0;
 }
+
+
 
 .catalog-taste-choise {
   font-size: 14px;
+
   /* line-height auto ???? */
 }
 
 .catalog-sort {
   position: relative;
-  
+  background-color: rgba(255,255,255,0.2);
+  padding: 0 5px;
+  border-radius: 15px;
 }
 
 
@@ -1191,6 +1209,9 @@ li .full-basket-price {
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgb(255, 255, 255);
   color: #ffffff;
+  align-self: flex-end;
+  border-radius: 15px;
+  padding: 5px 15px;
 }
 
 .catalog-filter-button:hover {
@@ -1257,16 +1278,21 @@ li .full-basket-price {
 
 
 .catalog-form {
-  width: 879px;
+  width: 860px;
 }
 
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-fat-choice-items {
   display: flex;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 15px;
 }
 
 .active-catalog {
@@ -1277,7 +1303,7 @@ li .full-basket-price {
 
 .catalog-h1 {
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 .nav-contact-breadcrumbs {
@@ -1287,4 +1313,16 @@ li .full-basket-price {
   padding: 0;
   margin: 0;
 
+}
+
+.catalog-fat-choice-item {
+  display: flex;
+}
+
+
+.catalog fieldset {
+  padding: 0;
+  border: none;
+  border-radius: 15px;
+  border-radius: 15px;
 }
